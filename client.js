@@ -19,5 +19,5 @@ function recordData(event) {
 }
 
 function removeEntry(event) {
-
+    event.target.parentElement.parentElement.remove();
 }
