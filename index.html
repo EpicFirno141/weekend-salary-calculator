@@ -11,8 +11,8 @@
     <header>
         Salary Calculator
     </header>
-    <div id="content">
-        <form>
+    <div id="formContent">
+        <form onSubmit="recordData(event)">
             <label for="firstNameValue">First Name:</label>
             <input id="firstNameValue" type="text"><br>
             <label for="lastNameValue">Last Name:</label>
@@ -22,8 +22,24 @@
             <label for="titleValue">Title:</label>
             <input type="text" id="lastNameValue"><br>
             <label for="salaryValue">Salary:</label>
-            <input type="text" id="salaryValue">
+            <input type="text" id="salaryValue"> <br>
+            <input type="submit" value="Submit">
         </form>
+    </div>
+    <div id="tableContent">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
     <script src="client.js"></script>
 </body>
